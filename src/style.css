@@ -1,0 +1,188 @@
+:root {
+    --nav-bg-color: white;
+    --main-bg-color: rgb(230, 230, 230); 
+    font-size: 18px; 
+    font-family: 'Raleway';
+    background: var(--main-bg-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Bullpen3D';
+    src: url('./Bullpen3D.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Daughter of Fortune';
+    src: url('./Daughter\ of\ Fortune.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./Raleway-SemiBold.ttf') format('truetype')
+}
+
+#content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content:space-between
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px 4px 8px;
+    background: var(--nav-bg-color);
+
+}
+
+.logo {
+    display: flex;
+    cursor: pointer;
+}
+
+img {
+    height: 100px;
+    width: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Daughter of Fortune';
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-top: 46px;
+}
+
+h2 {
+    margin-top: 48px;
+}
+
+h3 {
+    margin-top: 36px;
+    margin-bottom: 16px;
+}
+
+
+ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    color: blue;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.welcome-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-text-container h3:first-of-type {
+    margin-bottom: 0;
+}
+
+.welcome-text-container h3:nth-of-type(2) {
+    margin-top: 0;
+}
+
+.welcome-container + p {
+    margin-bottom: 24px;
+}
+
+main img {
+    height: 300px;
+    width: 400px;
+}
+
+main > p {
+    position: relative;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 683px; 
+    text-align: center;
+}
+
+a {
+    cursor: pointer;
+}
+
+img + p {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+section {
+    display: grid;
+    gap: 36px;
+    grid-template-columns: repeat(2, minmax(250px, 1fr))
+}
+
+section > div {
+    width: 350px;
+}
+
+
+
+form > * {
+    display: block;
+}
+
+form > input, form > label {
+    text-align: left;
+}
+
+button {
+    appearance: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 8px 42px 8px 42px;
+    font-size: 1rem;
+    background: var(--nav-bg-color);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer {
+    background: var(--nav-bg-color);
+    text-align: center;
+}
